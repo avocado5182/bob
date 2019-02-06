@@ -1,11 +1,19 @@
 <html>
   <head>
     <title>Chat thing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script>
+          function showData()
+        (
+            var text = $("#chatText").val();
+          $("#textOutput").html(chatText);
   </head>
   <body>
     <center><h1>Chat thing for fun</h1></center>
     <p>this is a chat ting so yeah im cool amirite</p>
-    <input type="text" name="chatText"><br>
-    <input type="Submit" value=Submit><br>
+    <input type="text" id="chatText"><br>
+    <input type="button" value="Submit" onclick="showData();"><br>
+          
+          <center><h2><label id="textOutput"></label></h2></center>
   </body>
 </html
