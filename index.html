@@ -3,7 +3,13 @@
     <title>aJDnvwiNDjal</title>
     
     <script>
-      document.title = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10);
+         var result           = '';
+         var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+         var charactersLength = characters.length;
+         for ( var i = 0; i < 10; i++ ) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+         }
+         document.title = result;
     </script>
     <body>
       </hr>
